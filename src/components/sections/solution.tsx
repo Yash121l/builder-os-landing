@@ -9,26 +9,10 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    title: "Advanced AI Algorithms",
+    title: "One Dashboard for All Sites",
     description:
-      "Our platform utilizes cutting-edge AI algorithms to provide accurate and efficient solutions for your business needs.",
-    className: "hover:bg-red-500/10 transition-all duration-500 ease-out",
-    content: (
-      <>
-        <Safari
-          src={`/dashboard.png`}
-          url="https://builder-os.hevarto.com"
-          className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
-        />
-      </>
-    ),
-  },
-  {
-    title: "Secure Data Handling",
-    description:
-      "We prioritize your data security with state-of-the-art encryption and strict privacy protocols, ensuring your information remains confidential.",
-    className:
-      "order-3 xl:order-none hover:bg-blue-500/10 transition-all duration-500 ease-out",
+      "Monitor every project, contractor, and budget in real time from a single screen — no more juggling Excel or phone calls.",
+    className: "hover:bg-blue-500/10 transition-all duration-500 ease-out",
     content: (
       <Safari
         src={`/dashboard.png`}
@@ -38,11 +22,25 @@ const features = [
     ),
   },
   {
-    title: "Seamless Integration",
+    title: "Automated CRM & Lead Funnel",
     description:
-      "Easily integrate our AI solutions into your existing workflows and systems for a smooth and efficient operation.",
+      "Manage customer inquiries, assign follow-ups, and track sales pipelines — all customized for builders and developers.",
     className:
-      "md:row-span-2 hover:bg-orange-500/10 transition-all duration-500 ease-out",
+      "order-3 xl:order-none hover:bg-green-500/10 transition-all duration-500 ease-out",
+    content: (
+      <Safari
+        src={`/dashboard.png`}
+        url="https://builder-os.hevarto.com"
+        className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
+      />
+    ),
+  },
+  {
+    title: "Real-Time Site Access & Security",
+    description:
+      "Know who is on-site, control visitor entries, and review security logs — all from the cloud with zero hassle.",
+    className:
+      "md:row-span-2 hover:bg-red-500/10 transition-all duration-500 ease-out",
     content: (
       <>
         <FlickeringGrid
@@ -64,11 +62,11 @@ const features = [
     ),
   },
   {
-    title: "Customizable Solutions",
+    title: "Custom Workflows for Every Role",
     description:
-      "Tailor our AI services to your specific needs with flexible customization options, allowing you to get the most out of our platform.",
+      "From your on-ground supervisors to finance heads, every stakeholder gets tools tailored to their function — without tech overwhelm.",
     className:
-      "flex-row order-4 md:col-span-2 md:flex-row xl:order-none hover:bg-green-500/10 transition-all duration-500 ease-out",
+      "flex-row order-4 md:col-span-2 md:flex-row xl:order-none hover:bg-yellow-500/10 transition-all duration-500 ease-out",
     content: (
       <>
         <Ripple className="absolute -bottom-full" />
@@ -82,12 +80,12 @@ const features = [
   },
 ];
 
-export default function Component() {
+export default function SolutionSection() {
   return (
     <Section
-      title="Solution"
-      subtitle="Empower Your Business with AI Workflows"
-      description="Generic AI tools won't suffice. Our platform is purpose-built to provide exceptional AI-driven solutions for your unique business needs."
+      title="How Builder OS Solves It"
+      subtitle="Tailored tools to digitize every step of your operations."
+      description="Say goodbye to WhatsApp chaos, lost spreadsheets, and paperwork. Builder OS brings automation, clarity, and control to your growing business."
       className="bg-neutral-100 dark:bg-neutral-900"
     >
       <div className="mx-auto mt-16 grid max-w-sm grid-cols-1 gap-6 text-gray-500 md:max-w-3xl md:grid-cols-2 xl:grid-rows-2 md:grid-rows-3 xl:max-w-6xl xl:auto-rows-fr xl:grid-cols-3">
