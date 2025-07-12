@@ -1,34 +1,34 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import Section from "@/components/section";
 import { Card, CardContent } from "@/components/ui/card";
-import { Brain, Shield, Zap } from "lucide-react";
+import { Wrench, Timer, ShieldCheck } from "lucide-react";
 
 const problems = [
   {
-    title: "Data Overload",
+    title: "Manual Work Overload",
     description:
-      "Businesses struggle to make sense of vast amounts of complex data, missing out on valuable insights that could drive growth and innovation.",
-    icon: Brain,
+      "Builders rely on paperwork, calls, and spreadsheets to track projects — leading to miscommunication and errors on site.",
+    icon: Wrench,
   },
   {
-    title: "Slow Decision-Making",
+    title: "Delays & Inefficiencies",
     description:
-      "Traditional data processing methods are too slow, causing businesses to lag behind market changes and miss crucial opportunities.",
-    icon: Zap,
+      "Without real-time updates and automation, teams miss deadlines, and coordination across departments breaks down.",
+    icon: Timer,
   },
   {
-    title: "Data Security Concerns",
+    title: "Lack of Control & Visibility",
     description:
-      "With increasing cyber threats, businesses worry about the safety of their sensitive information when adopting new technologies.",
-    icon: Shield,
+      "From site access to finance tracking, traditional methods don’t give you the control or visibility you need to scale confidently.",
+    icon: ShieldCheck,
   },
 ];
 
-export default function Component() {
+export default function ProblemSection() {
   return (
     <Section
-      title="Problem"
-      subtitle="Manually entering your data is a hassle."
+      title="The Problem"
+      subtitle="Builders today face more than just physical challenges — digital ones too."
     >
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
         {problems.map((problem, index) => (
