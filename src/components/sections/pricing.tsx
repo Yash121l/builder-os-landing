@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@/components/posthog-provider";
 import Section from "@/components/section";
 import { buttonVariants } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
@@ -18,6 +19,7 @@ export default function PricingSection() {
   const { isDesktop } = useWindowSize();
 
   const handleToggle = () => {
+    track("pricing_billing_toggled", { billing: isMonthly ? "yearly" : "monthly" });
     setIsMonthly(!isMonthly);
   };
 
@@ -114,6 +116,9 @@ export default function PricingSection() {
 
               <Link
                 href={plan.href}
+                data-track-event="pricing_plan_selected"
+                data-track-plan={plan.name}
+                data-track-billing={isMonthly ? "monthly" : "yearly"}
                 className={cn(
                   buttonVariants({
                     variant: "outline",

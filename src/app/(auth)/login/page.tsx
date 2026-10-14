@@ -27,7 +27,7 @@ export default function LoginForm() {
             <Icons.google className="w-4 h-4 mr-2" />
             Login with Google
           </Button>
-          <Button variant="outline" className="w-full">
+          <Button variant="outline" className="w-full" data-track-event="login_attempted" data-track-method="github">
             <Icons.github className="w-4 h-4 mr-2" />
             Login with GitHub
           </Button>
@@ -60,7 +60,7 @@ export default function LoginForm() {
             </div>
             <Input id="password" type="password" required />
           </div>
-          <Button type="submit" className="w-full">
+          <Button type="submit" className="w-full" data-track-event="login_attempted" data-track-method="email">
             Login
           </Button>
         </div>
