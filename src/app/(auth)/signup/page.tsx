@@ -45,10 +45,10 @@ export default function LoginForm() {
             <Label htmlFor="password">Password</Label>
             <Input id="password" type="password" />
           </div>
-          <Button type="submit" className="w-full">
+          <Button type="submit" className="w-full" data-track-event="signup_attempted" data-track-method="email">
             Create an account
           </Button>
-          <Button variant="outline" className="w-full">
+          <Button variant="outline" className="w-full" data-track-event="signup_attempted" data-track-method="github">
             Sign up with GitHub
           </Button>
         </div>

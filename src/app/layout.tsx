@@ -1,3 +1,4 @@
+import { PostHogProvider } from "@/components/posthog-provider";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -83,7 +84,7 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem={true}
         >
-          {children}
+          <PostHogProvider>{children}</PostHogProvider>
           <ThemeToggle />
           <TailwindIndicator />
         </ThemeProvider>
